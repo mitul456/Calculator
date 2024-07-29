@@ -1,6 +1,6 @@
 
 
-let currentDisplay = ' ';
+let currentDisplay = '';
 
 
 
@@ -8,8 +8,8 @@ function btnAC(){
     currentDisplay = '';
     document.getElementById('display').value = currentDisplay;
 }
-function btnPM(){
-    currentDisplay = currentDisplay;
+function btnBack(){
+    currentDisplay = currentDisplay.slice(0, -1);
     document.getElementById('display').value = currentDisplay;
 }
 function btnMod(){
